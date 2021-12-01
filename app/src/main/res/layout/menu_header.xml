@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/colorPrimary"
+    android:padding="15dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/slogan"
+    android:text="Smart Service Provider"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:textColor="@color/white"
+    />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SSP"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_above="@id/slogan"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/logo"
+        android:src="@drawable/paint_bucket_48px"/>
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+        android:src="@drawable/mss"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

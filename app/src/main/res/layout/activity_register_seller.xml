@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile.RegisterSellerActivity"
+    android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:background="@drawable/shaprect01">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back_white"
+            android:background="@null"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Seller"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/white"/>
+        <ImageButton
+            android:id="@+id/gpsBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_gps_fixed_24"
+            android:background="@null"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iconIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/shape_cir01"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/key_white"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconIV">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/profileIV"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                app:c_border="true"
+                app:c_background_color="@color/white"
+                app:c_border_width="1dp"
+                android:src="@drawable/ic_baseline_person_add_24"/>
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/profileIV"
+                android:hint="Full Name"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_person_add_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/shopNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/nameEt"
+                android:hint="Shop Name"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_store_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textPersonName" />
+            <EditText
+                android:id="@+id/phoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/shopNameEt"
+                android:hint="Phone"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="phone" />
+            <EditText
+                android:id="@+id/deliveryFeeEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/phoneEt"
+                android:hint="Delivery Fee"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_phone_iphone_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="numberDecimal" />
+            <LinearLayout
+                android:id="@+id/addressLl"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/deliveryFeeEt">
+                <EditText
+                    android:id="@+id/countryEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Country"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_baseline_location_gray"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/shape_rect02"
+                    android:inputType="textPostalAddress" />
+                <EditText
+                    android:id="@+id/stateEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="State"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_baseline_location_gray"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/shape_rect02"
+                    android:inputType="textPostalAddress" />
+                <EditText
+                    android:id="@+id/cityEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="City"
+                    android:padding="10dp"
+                    android:drawableStart="@drawable/ic_baseline_location_gray"
+                    android:drawablePadding="5dp"
+                    android:background="@drawable/shape_rect02"
+                    android:inputType="textPostalAddress"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+            <EditText
+                android:id="@+id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/addressLl"
+                android:hint="Complete Address"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_location_gray"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textPostalAddress|textMultiLine" />
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/addressEt"
+                android:hint="Email"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textEmailAddress" />
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/emailEt"
+                android:hint="Password"
+                android:padding="10dp"
+                android:drawableStart="@drawable/lock_gray"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textPassword" />
+            <EditText
+                android:id="@+id/cPasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/passwordEt"
+                android:hint="Confirm Password"
+                android:padding="10dp"
+                android:drawableStart="@drawable/lock_gray"
+                android:drawablePadding="5dp"
+                android:background="@drawable/shape_rect02"
+                android:inputType="textPassword" />
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cPasswordEt"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/shapbtn"
+                android:gravity="center"
+                android:minWidth="120dp"
+                android:text="Register"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<group
+    android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/nav_notification"
+        android:title="Notification"
+        android:icon="@drawable/ic_notifications"/>
+    <item
+        android:id="@+id/nav_about"
+        android:title="About"
+        android:icon="@drawable/ic_info"/>
+</group>
+
+<item android:title="Profile">
+    <menu>
+        <group
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_Login"
+                android:title="Login"
+                android:icon="@drawable/ic_baseline_login_24"/>
+            <item
+                android:id="@+id/nav_profile"
+                android:title="Edit or Update Profile"
+                android:icon="@drawable/ic_baseline_person_add_24"/>
+            <item
+                android:id="@+id/nav_Logout"
+                android:title="logout"
+                android:icon="@drawable/ic_info"/>
+        </group>
+    </menu>
+</item>
+
+    <item android:title="Categpries">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_bike_mechanic"
+                    android:title="Bike Mechanics"
+                    android:icon="@drawable/ic_home"/>
+                <item
+                    android:id="@+id/nav_ac_mechanic"
+                    android:title="AC Mechanics"
+                    android:icon="@drawable/ic_notifications"/>
+                <item
+                    android:id="@+id/nav_plumber"
+                    android:title="plumber"
+                    android:icon="@drawable/ic_info"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Share">
+        <menu>
+            <group
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Bike Mechanics"
+                    android:icon="@drawable/ic_baseline_share_24"/>
+                <item
+                    android:id="@+id/nav_ac_rate_us"
+                    android:title="Rate Us"
+                    android:icon="@drawable/ic_baseline_rate_review_24"/>
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
